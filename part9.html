@@ -7,11 +7,14 @@
     <style type="text/css">
         body {
             margin: 0;
+	    font-family: 'Roboto';
+	    
         }
     </style>
 </head>
 <body>
-
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto">
+	
 <script type="text/javascript">
 
 var game = new Phaser.Game(1024, 560, Phaser.AUTO, '', { preload: preload, create: create, update: update });
@@ -101,7 +104,7 @@ function create() {
     }
 
     //  The score
-    scoreText = game.add.text(16, 16, 'Killed: 0', { font: "50px Raleway", fill: '#FFFFFF' });
+    scoreText = game.add.text(16, 16, 'Killed: 0', { font: "50px Roboto", fill: '#FFFFFF' });
 
     //  Our controls.
     cursors = game.input.keyboard.createCursorKeys();
